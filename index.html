@@ -790,17 +790,13 @@
         <script>
             // Lấy URL từ trình duyệt
             var url = new URL(window.location.href);
-             // Lấy giá trị của tham số 'name'
-            var nameValue = url.searchParams.get("name");
-            // Hiển thị giá trị trong phần tử HTML 
-            var outputElement = document.getElementById("output");
-                if (nameValue === null || nameValue === "") {
-                outputElement.placeholder = "";
-                } else {
-                // Đặt giá trị vào thuộc tính 'value' của thẻ input
-                outputElement.value =  "Kính/thân mời " + nameValue + " đến dự đám cưới của chúng tôi ";
-                } 
-
+                if (url.searchParams.has("name")) {
+                // Lấy giá trị của tham số 'name'
+                var nameValue = url.searchParams.get("name");
+                // Hiển thị giá trị trong phần tử HTML
+                var outputElement = document.getElementById("output");
+                outputElement.textContent = "Kính/thân mời " + nameValue + " đến dự đám cưới của chúng tôi ";
+            }
             var outputElement = document.getElementById("nameInput"); 
             // Đặt giá trị vào thuộc tính 'value' của thẻ input
             outputElement.value = nameValue; 
@@ -810,6 +806,6 @@
         <script src="templates/js/variables.js"></script>
         <script src="templates/js/scripts.js"></script>
         <script src="templates/js/template.settings.js"></script>
-        <script src="common/calendar.js"></script> 
+        <script src="common/calendar.js?v=202401010"></script> 
     </body>
 </html>
