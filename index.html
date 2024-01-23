@@ -88,7 +88,10 @@
                                 color: #fff !important;
                                 font-size: 24px;"></div>
                                 <div class="hero-subtitle light" data-animation-direction="fade" data-animation-delay="1000">06 Tháng 02 2024</div>
-                                <div data-animation-direction="fade" data-animation-delay="1000">
+                                <div data-animation-direction="fade" data-animation-delay="1000" class="d-inline-block">
+                                    <a href="rsvp.html" class="btn btn-light scrollto">Xác nhận tham dự</a>
+                                </div>
+                                <div data-animation-direction="fade" data-animation-delay="1000" class="d-inline-block">
                                     <a href="#donate" class="btn btn-light scrollto">Gửi mừng Cưới</a>
                                 </div>
                             </div>
@@ -177,21 +180,20 @@
                         <div class="about-us-desc col-lg-8 offset-lg-2" data-animation-direction="from-bottom" data-animation-delay="300">
                             <h3>We are Getting Married</h3>
                             <p>
-                                Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như đám cưới của chúng tôi. Chúng tôi muốn gửi đến bạn những lời cảm ơn sâu sắc nhất và để bạn biết chúng tôi rất hạnh phúc khi thấy bạn ở đó.
+                                Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như đám cưới của chúng tôi. 
+                                Chúng tôi muốn gửi đến bạn những lời cảm ơn sâu sắc nhất, để bạn biết chúng tôi rất hạnh phúc khi thấy bạn ở đó.
                                 Cảm ơn các bạn rất nhiều vì sự hiện diện cùng những lời chúc tốt đẹp mà bạn đã dành cho chúng tôi!
                             </p>
                             <p class="groom-bride-signature"><span>Siu Y Nin</span> & <span>Ksor H' Liêng</span></p>
                              <div class="parent-info-group">
                                 <div class="parent-infos">
-                                    <div class="parent-info"><span class="parent-title">Con ông:</span> <span class="parent-name">Ơi Riben (Ama Nin)                                    </span></div>
-
-                                    <div class="parent-info"><span class="parent-title">Con bà:</span> <span class="parent-name">Yă Riben (Ami Nin)                                    </span></div>
+                                    <div class="parent-info"><span class="parent-title">Con ông:</span> <span class="parent-name">Ơi Riben (Ama Nin)</span></div>
+                                    <div class="parent-info"><span class="parent-title">Con bà:</span> <span class="parent-name">Yă Riben (Ami Nin)</span></div>
                                 </div>
 
                                 <div class="parent-infos">
-                                    <div class="parent-info"><span class="parent-title">Con ông:</span> <span class="parent-name">Ơi Trúk (Ama Phong)                                    </span></div>
-
-                                    <div class="parent-info"><span class="parent-title">Con bà:</span> <span class="parent-name">Yă Trúk (Ami Phong)                                    </span></div>
+                                    <div class="parent-info"><span class="parent-title">Con ông:</span> <span class="parent-name">Ơi Trúk (Ama Phong) </span></div>
+                                    <div class="parent-info"><span class="parent-title">Con bà:</span> <span class="parent-name">Yă Trúk (Ami Phong)  </span></div>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +337,7 @@
                                     <h2 class="fs-1">SIU Y NIN <small>&</small> KSOR H' LIÊNG</h2>
 
                                     <div> 
-                                    Bữa tiệc sẽ trọn ven hơn nếy có sự diện của bạn <div style="display: inline-block;" id="output"></div>, hãy để lại xác nhận tham dự để tụi mình sắp xếp và đón tiếp chu đáo nhất nhé! ❤️❤️
+                                    Bữa tiệc sẽ trọn vẹn hơn nếy có sự diện của bạn <div style="display: inline-block;" id="output"></div>, hãy để lại xác nhận tham dự để tụi mình sắp xếp và đón tiếp chu đáo nhất nhé! ❤️❤️
                                 </div>
                                     <div class="center m-0 mt-2">
                                         <a href="#rsvp" class="btn btn-primary reverse scrollto text-white px-2" style="min-width: 240px; max-width: 240px;">Gửi lời chúc</a>
@@ -355,7 +357,12 @@
             <!-- END THE WEDDING SECTION -->
             <style>
                 .fs-1 {
-                    font-size: calc(1.075rem + 1.1vw)!important;
+                    font-size:19px !important;
+                }
+                @media (min-width: 768px) {
+                   .fs-1 {
+                    font-size:27px !important;
+                     }  
                 }
             </style>
             <!-- BEGIN GALLERY SECTION -->
@@ -721,7 +728,13 @@
                                             <img class="qr-code-image m-auto mb-2" src="templates/images/1-acb.jpg" />
                                             <p>Ngân hàng: <strong>Á CHÂU (ACB)</strong></p>
                                             <p>Tên tài khoản: <strong>SIU Y NIN</strong></p>
-                                            <p>Số tài khoản: <strong>32495337</strong></p> 
+                                            <p>Số tài khoản: <strong><div class="d-inline-block" id="textToCopy2">32495337</div></strong>
+                                                <button style=" background: #fff;
+                                                color: #343434;
+                                                border: none;
+                                                border-radius: 20px;
+                                                padding: 0 10px;"
+                                                 onclick="copyText2()">Copy</button></p> 
                                         </div>
                                     </div>
                                 </div>
@@ -736,7 +749,13 @@
                                             <img class="qr-code-image m-auto mb-2" src="templates/images/2-vcb.jpg" />
                                             <p>Ngân hàng: <strong>Vietcombank</strong></p>
                                             <p>Tên tài khoản: <strong>KSOR H LIENG</strong></p>
-                                            <p>Số tài khoản: <strong>0041000308651</strong></p> 
+                                            <p>Số tài khoản: <strong><div class="d-inline-block" id="textToCopy1">0041000308651</div></strong><button 
+                                                style=" background: #fff;
+                                                color: #343434;
+                                                border: none;
+                                                border-radius: 20px;
+                                                padding: 0 10px;"
+                                                onclick="copyText1()">Copy</button></p> 
                                         </div>
                                     </div>
                                 </div>
@@ -795,11 +814,47 @@
                 var nameValue = url.searchParams.get("name");
                 // Hiển thị giá trị trong phần tử HTML
                 var outputElement = document.getElementById("output");
-                outputElement.textContent = "Kính/thân mời " + nameValue + " đến dự đám cưới của chúng tôi ";
+                outputElement.textContent = "Kính mời " + nameValue + " đến dự đám cưới của chúng tôi ";
+                
+                var outputElement = document.getElementById("nameInput"); 
+                // Đặt giá trị vào thuộc tính 'value' của thẻ input
+                outputElement.value = nameValue; 
             }
-            var outputElement = document.getElementById("nameInput"); 
-            // Đặt giá trị vào thuộc tính 'value' của thẻ input
-            outputElement.value = nameValue; 
+          
+
+            function copyText1() { 
+                const textToCopy = document.getElementById('textToCopy1');
+                const textarea = document.createElement('textarea');
+                textarea.value = textToCopy.textContent;
+
+                // Thêm textarea vào DOM
+                document.body.appendChild(textarea);
+
+                // Chọn và sao chép văn bản từ textarea
+                textarea.select();
+                document.execCommand('copy');
+
+                // Loại bỏ textarea khỏi DOM
+                document.body.removeChild(textarea);
+                alert('Đã sao chép!');
+            }
+            function copyText2() { 
+                const textToCopy = document.getElementById('textToCopy2');
+                const textarea = document.createElement('textarea');
+                textarea.value = textToCopy.textContent;
+
+                // Thêm textarea vào DOM
+                document.body.appendChild(textarea);
+
+                // Chọn và sao chép văn bản từ textarea
+                textarea.select();
+                document.execCommand('copy');
+
+                // Loại bỏ textarea khỏi DOM
+                document.body.removeChild(textarea);
+                alert('Đã sao chép!');
+            }
+
         </script>
         <script src="templates/js/jquery-plugin-collection.js"></script>
         <!-- Template Scripts -->
